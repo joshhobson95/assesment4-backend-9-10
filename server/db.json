@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "title": "Minecraft",
+        "yearReleased": "2011",
+        "numberofLikes": 0,
+        "imageURL" : "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png"
+
+    },
+    {
+        "id": 2,
+        "title": "Pokemon HeartGold and SoulSilver",
+        "yearReleased": "2010",
+        "numberofLikes": 0,
+        "imageURL" : "https://en.wikipedia.org/wiki/Pok%C3%A9mon_HeartGold_and_SoulSilver#/media/File:PokemonHGSSBox.jpg"
+
+    },
+    {
+        "id": 3,
+        "title": "Roller Coaster Tycoon",
+        "yearReleased": "1999",
+        "numberofLikes": 0,
+        "imageURL" : "https://en.wikipedia.org/wiki/RollerCoaster_Tycoon#/media/File:Rollercoaster_Tycoon_logo.png"
+
+    },
+    {
+        "id": 4,
+        "title": "League of Legends",
+        "yearReleased": "2009",
+        "numberofLikes": 0,
+        "imageURL" : "https://en.wikipedia.org/wiki/League_of_Legends#/media/File:League_of_Legends_2019_vector.svg"
+
+    },
+    {
+        "id": 5,
+        "title": "Fortnite",
+        "yearReleased": "2017",
+        "numberofLikes": 0,
+        "imageURL" : "https://en.wikipedia.org/wiki/Fortnite#/media/File:FortniteLogo.svg"
+
+    },
+    {
+        "id": 6,
+        "title": "Raft",
+        "yearReleased": "2021",
+        "numberofLikes": 0,
+        "imageURL" : "https://en.wikipedia.org/wiki/Raft_(video_game)#/media/File:Raft_(2018_video_game).jpg"
+
+    }
+    
+]
