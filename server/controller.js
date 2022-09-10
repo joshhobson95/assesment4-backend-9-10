@@ -1,5 +1,7 @@
 let games = require('./db.json')
 let globalID = 7;
+let clickCount = 0;
+let clickLimit = 4;
 
 
 module.exports = {
@@ -56,8 +58,9 @@ module.exports = {
         // console.log(req.body.type)
         const {type} = req.body;
         let index = games.findIndex(elem => elem.id === +req.params.id)
-        if(type === 'numberOfLikes'){
+        if(type === 'numberOfLikes' && clickCount <= clickLimit){
             games[index].numberOfLikes += 1;
+            clickCount++
             res.status(200).send(games)
         }
             
@@ -65,5 +68,6 @@ module.exports = {
             res.status(400).send('Invalid like rating!')
         }
 
-}
+},
+
 }

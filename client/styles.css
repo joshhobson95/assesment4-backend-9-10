@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(150, 233, 233);
+}
+
+h1{
+   
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    color: rgb(21, 43, 44);
+}
+
+
+form {
+ height: 200px;
+ width: 200px;
+ display: flex;
+ flex-direction: column;
+}
+#games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.game-card {
+    background-color: rgb(214, 221, 111);
+    width: 2000px;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.game-cover {
+    width: 300px; 
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+.game-title {
+font-size: 17pt;
+font-weight: 800;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-variant: small-caps;
+}
+.btns-container > button {
+    color: darkgoldenrod;
+    width: 50px;
+    height: 20px;
+}
