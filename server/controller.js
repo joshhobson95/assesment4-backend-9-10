@@ -49,20 +49,20 @@ module.exports = {
       
         globalID++
        
-        res.status(200).send(movies)
+        res.status(200).send(games)
     },
     updateGame: (req, res) => {
         // console.log(req.params.id)
         // console.log(req.body.type)
         const {type} = req.body;
         let index = games.findIndex(elem => elem.id === +req.params.id)
-        if(type === 'like'){
-            games[index].rating += 1;
+        if(type === 'numberOfLikes'){
+            games[index].numberOfLikes += 1;
             res.status(200).send(games)
         }
             
        else {
-            res.status(400).send('Invalid star rating!')
+            res.status(400).send('Invalid like rating!')
         }
 
 }
