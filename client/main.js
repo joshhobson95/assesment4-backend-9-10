@@ -87,7 +87,7 @@ function createGameCard(game) {
     gameCard.innerHTML = `<img alt='game cover' src=${game.imageURL} class="game-cover"/>
     <p class="game-title">${game.title}</p>
     <div class="btns-container">
-        <button onclick="updategame(${game.id}, 'like')">like</button>
+        <button onclick="updateGame(${game.id}, 'like')">like</button>
         <p class="game-rating">${game.rating} likes</p>
        
     </div>
