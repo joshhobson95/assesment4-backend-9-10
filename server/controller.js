@@ -1,5 +1,5 @@
-
-
+let games = require('./db.json')
+let globalID = 7;
 
 
 module.exports = {
@@ -24,5 +24,46 @@ module.exports = {
 
 },
 
+//GAMES FUNCTION
+    getGames: (req, res) => {
+        res.status(200).send(games)
+    }, 
 
+    deleteGame: (req, res) => {
+        let index = games.findIndex(elem => elem.id === +req.params.id)
+        games.splice(index, 1)
+        res.status(200).send(games)
+      
+    },
+    createGame: (req, res) => {
+        const {title, yearReleased, numberOfLikes, imageURL} = req.body
+        let newGame = {
+            title,
+            yearReleased,
+            numberOfLikes: Number(numberOfLikes),
+            imageURL,
+            id: globalID
+          
+        }
+        games.push(newGame)
+      
+        globalID++
+       
+        res.status(200).send(movies)
+    },
+    updateGame: (req, res) => {
+        // console.log(req.params.id)
+        // console.log(req.body.type)
+        const {type} = req.body;
+        let index = games.findIndex(elem => elem.id === +req.params.id)
+        if(type === 'like'){
+            games[index].rating += 1;
+            res.status(200).send(games)
+        }
+            
+       else {
+            res.status(400).send('Invalid star rating!')
+        }
+
+}
 }
